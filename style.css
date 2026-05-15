@@ -44,8 +44,30 @@ main {
 
 #suggestions {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.categorie {
+  width: 100%;
+  background: rgba(255,255,255,0.35);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #c7def5;
+}
+
+.categorie h2 {
+  color: #1565C0;
+  font-size: 22px;
+  margin-bottom: 18px;
+  padding-left: 12px;
+  border-left: 5px solid #2196F3;
+}
+
+.buttons-grid {
+  display: flex;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 button.suggestion {
