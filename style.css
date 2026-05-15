@@ -1,4 +1,8 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -8,6 +12,8 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
+/* HEADER */
 
 header {
   background: #ffffff;
@@ -30,17 +36,19 @@ header img {
 
 header h1 {
   color: #1565C0;
-  font-size: 22px;
+  font-size: 32px;
+  font-weight: 700;
 }
+
+/* MAIN */
 
 main {
   width: 100%;
-  max-width: 1200px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  max-width: 1250px;
+  padding: 24px;
 }
+
+/* CATEGORIES */
 
 #suggestions {
   display: flex;
@@ -50,41 +58,47 @@ main {
 
 .categorie {
   width: 100%;
-  background: rgba(255,255,255,0.35);
-  padding: 20px;
-  border-radius: 16px;
+  background: rgba(255,255,255,0.45);
+  padding: 22px;
+  border-radius: 18px;
   border: 1px solid #c7def5;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .categorie h2 {
   color: #1565C0;
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 18px;
   padding-left: 12px;
   border-left: 5px solid #2196F3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
+/* BOUTONS */
 
 .buttons-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
 }
 
 button.suggestion {
   background: white;
   color: #1565C0;
   border: 2px solid #2196F3;
-  border-radius: 20px;
-  padding: 10px 16px;
-  font-size: 13px;
+  border-radius: 24px;
+  padding: 12px 18px;
+  font-size: 14px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 
 button.suggestion:hover {
   background: #2196F3;
   color: white;
+  transform: translateY(-2px);
 }
 
 button.suggestion.actif {
@@ -92,10 +106,12 @@ button.suggestion.actif {
   color: white;
 }
 
-#reponse-box {
+/* REPONSES */
+
+.reponse-box {
   background: white;
-  border-radius: 12px;
-  padding: 24px;
+  border-radius: 14px;
+  padding: 22px;
   border: 1px solid #BBDEFB;
   box-shadow: 0 2px 8px rgba(33,150,243,0.15);
   display: none;
@@ -103,7 +119,10 @@ button.suggestion.actif {
   color: #1565C0;
   font-size: 15px;
   white-space: pre-line;
+  margin-top: 20px;
 }
+
+/* CHAT LIBRE */
 
 #chat-libre {
   margin-top: 20px;
@@ -138,8 +157,20 @@ button.suggestion.actif {
   font-size: 13px;
 }
 
-.user { background: #1565C0; color: white; align-self: flex-end; }
-.bot  { background: #E3F2FD; color: #1565C0; align-self: flex-start; border: 1px solid #BBDEFB; }
+.user {
+  background: #1565C0;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot {
+  background: #E3F2FD;
+  color: #1565C0;
+  align-self: flex-start;
+  border: 1px solid #BBDEFB;
+}
+
+/* INPUT */
 
 #input-area {
   display: flex;
@@ -166,21 +197,34 @@ button {
   cursor: pointer;
 }
 
-button:hover { background: #1565C0; }
-.categorie {
-  margin-bottom: 28px;
+button:hover {
+  background: #1565C0;
 }
 
-.categorie h2 {
-  color: #1565C0;
-  font-size: 18px;
-  margin-bottom: 12px;
-  padding-left: 10px;
-  border-left: 4px solid #2196F3;
-}
+/* RESPONSIVE */
 
-.buttons-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  header img {
+    width: 180px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  .buttons-grid {
+    flex-direction: column;
+  }
+
+  button.suggestion {
+    width: 100%;
+  }
+
 }
