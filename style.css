@@ -144,3 +144,20 @@ button {
 }
 
 button:hover { background: #1565C0; }
+.categorie {
+  margin-bottom: 28px;
+}
+
+.categorie h2 {
+  color: #1565C0;
+  font-size: 18px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 4px solid #2196F3;
+}
+
+.buttons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
