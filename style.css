@@ -16,16 +16,17 @@ header {
   border-bottom: 3px solid #2196F3;
   width: 100%;
   text-align: center;
-  padding: 0px 20px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  line-height: 1;
 }
 
 header img {
-  width: 160px;
+  width: 220px;
   height: auto;
 }
 
