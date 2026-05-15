@@ -26,6 +26,19 @@ Délais : 72h ou plus selon destination`,
 ⏱️ 48H — Départements :
 16, 17, 19, 22, 27, 28, 29, 32, 35, 40, 44, 47, 49, 50, 53, 56, 61, 64, 65, 72, 79, 81, 82, 85, 87`,
 
+  services: '🛎️ SERVICES TRANSPORTS
+
+HEPPNER:
+- Star Priority -> Assure le délai contractuel de livraison
+- Star Priority 13 -> Assure le délai contractuel de livraison avant 13h00
+- Star Date -> Assure une livraison a une date précise
+- Star RDV -> Assure une livraison avec prise de RDV
+
+CHRONOPOST:
+- Chrono 13 -> Assure le délai contractuel de livraison avant 13h00
+- Chrono 10 -> Assure le délai contractuel de livraison avant 10h00
+- Pick and collect -> Livraison dans un point relais choisi par le client',
+
   incoterm: `📋 QUEL INCOTERM SAISIR ?
 
 - Enlèvement client dans nos locaux → EXW
