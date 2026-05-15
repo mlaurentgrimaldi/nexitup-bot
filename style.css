@@ -14,10 +14,12 @@ header {
   border-bottom: 3px solid #2196F3;
   width: 100%;
   text-align: center;
-  padding: 5px;
+  padding: 12px 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 header img {
