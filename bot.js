@@ -26,7 +26,7 @@ Délais : 72h ou plus selon destination`,
 ⏱️ 48H — Départements :
 16, 17, 19, 22, 27, 28, 29, 32, 35, 40, 44, 47, 49, 50, 53, 56, 61, 64, 65, 72, 79, 81, 82, 85, 87`,
 
-  services: '🛎️ SERVICES TRANSPORTS
+  services: `🛎️ SERVICES TRANSPORTS
 
 HEPPNER:
 - Star Priority -> Assure le délai contractuel de livraison
@@ -37,7 +37,7 @@ HEPPNER:
 CHRONOPOST:
 - Chrono 13 -> Assure le délai contractuel de livraison avant 13h00
 - Chrono 10 -> Assure le délai contractuel de livraison avant 10h00
-- Pick and collect -> Livraison dans un point relais choisi par le client',
+- Pick and collect -> Livraison dans un point relais choisi par le client`,
 
   incoterm: `📋 QUEL INCOTERM SAISIR ?
 
@@ -93,7 +93,8 @@ Si aucun lien https n'est présent, deux cas possibles :
 - MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis`,
 };
 
-function afficherReponse(cle, boxId) {
+function afficherReponse(cle, boxId, event) {
+
   document.querySelectorAll(".reponse-box").forEach(box => {
     box.style.display = "none";
   });
@@ -106,7 +107,10 @@ function afficherReponse(cle, boxId) {
   box.style.display = "block";
   box.textContent = REPONSES[cle];
 
-  event.target.classList.add("actif");
+  // sécurisation (évite crash si event absent)
+  if (event && event.target) {
+    event.target.classList.add("actif");
+  }
 
   box.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
@@ -136,10 +140,13 @@ async function sendMessage() {
         })
       }
     );
+
     const data = await response.json();
     const reponse = data.candidates[0].content.parts[0].text;
+
     historique.push({ role: "model", parts: [{ text: reponse }] });
     afficherMessage(reponse, "bot");
+
   } catch (error) {
     afficherMessage("Erreur de connexion.", "bot");
   }
@@ -155,12 +162,18 @@ function afficherMessage(texte, type) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("user-input").addEventListener("keypress", (e) => {
-    if (e.key === "Enter") sendMessage();
-  });
+  const input = document.getElementById("user-input");
+  if (input) {
+    input.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") sendMessage();
+    });
+  }
 });
 
 function suggestionClick(texte) {
-  document.getElementById("user-input").value = texte;
+  const input = document.getElementById("user-input");
+  if (input) {
+    input.value = texte;
+  }
   sendMessage();
 }
