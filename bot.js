@@ -42,6 +42,20 @@ Nos agences : https://www.eshop-alliance.com/nos-agences-alliance-com
 LinkedIn : https://www.linkedin.com/company/alliance-com/
 YouTube : https://www.youtube.com/@AllianceCom
 
+--- TRANSPORTEURS ---
+CHRONOPOST :
+- Email : service.client@chronopost.fr
+- Téléphone National : 0892 70 25 07 (lundi-vendredi 8h-18h)
+- Téléphone Export : 0825 801 801
+- Délais : 24 à 48h en France, 72h ou plus à l'export selon destination
+
+HEPPNER :
+- Téléphone : 04 72 23 40 66
+- Email contact : audrey.pierrottet@heppner-group.com
+- Délais de livraison par département :
+  * 24H : départements 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 18, 21, 23, 24, 25, 26, 30, 31, 33, 34, 36, 37, 38, 39, 41, 42, 43, 45, 46, 48, 51, 52, 54, 55, 57, 58, 59, 60, 62, 63, 67, 68, 69, 70, 71, 73, 74, 75, 76, 77, 78, 80, 84, 86, 88, 89, 90, 91, 92, 93, 94, 95
+  * 48H : départements 16, 17, 19, 22, 27, 28, 29, 32, 35, 40, 44, 47, 49, 50, 53, 56, 61, 64, 65, 72, 79, 81, 82, 85, 87
+
 --- DESTOCKAGE ET PROMOTIONS ---
 Des produits en déstockage sont disponibles dans les catégories UC, Cabling, Networking et Sécurité.
 Promotions en cours sur : https://www.eshop-alliance.com/nos-promotions.html
