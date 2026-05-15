@@ -111,3 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Enter") sendMessage();
   });
 });
+function suggestionClick(texte) {
+  document.getElementById("user-input").value = texte;
+  sendMessage();
+}
