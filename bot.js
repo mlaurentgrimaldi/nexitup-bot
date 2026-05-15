@@ -98,6 +98,18 @@ Si aucun lien https n'est présent, deux cas possibles :
    - "Classic" → regroupement en palette Heppner
    -> Pour retrouver le tracking, aller dans le compte client et ouvrir les LC expédiées à la même date. L'une d'elles contient le tracking correspondant.
 
+   --- GROUPAGES CLIENT HEBDOMADAIRES ---
+Voici les jours de départ en groupage hebdomadaire par client :
+
+- ACRT VILLEFRANCHE : Lundis et Mercredis
+- ACRT BOURG : Lundis
+- TIMS : Lundis et Mercredis
+- SYBORD et MULTIPHONE : Mardis et Vendredis
+- ABC TELEPHONIE : Mercredis et Vendredis
+- ATELSYS : Mercredis et Vendredis
+- ACTION TELECOM, ACTION TELECOM ATLANTIQUE et ACTION TELECOM OCCITANIE : Vendredis
+- MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis
+
 --- DESTOCKAGE ET PROMOTIONS ---
 Des produits en déstockage sont disponibles dans les catégories UC, Cabling, Networking et Sécurité.
 Promotions en cours sur : https://www.eshop-alliance.com/nos-promotions.html
