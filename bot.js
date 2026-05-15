@@ -90,7 +90,7 @@ Si aucun lien https n'est présent, deux cas possibles :
 - ABC TELEPHONIE : Mercredis et Vendredis
 - ATELSYS : Mercredis et Vendredis
 - ACTION TELECOM, ACTION TELECOM ATLANTIQUE et ACTION TELECOM OCCITANIE : Vendredis
-- MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis`
+- MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis`,
 };
 
 function afficherReponse(cle, boxId) {
