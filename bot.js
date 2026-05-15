@@ -32,52 +32,65 @@ delais: `🗺️ DÉLAIS DE LIVRAISON HEPPNER
 
   incoterm: `📋 QUEL INCOTERM SAISIR ?
 
-🏭 Enlèvement client dans nos locaux → EXW
+- Enlèvement client dans nos locaux → EXW
 
-🇫🇷 Livraison France → DDP
+- Livraison en France → DDP
 
-📦 Chronopost export → DAP
+- Livraison en colis Chronopost à l'étranger → DAP
 
-🚀 Palettes export :
-• Aérien → CPT
-• Maritime → CFR
-• Post-acheminement géré → DAP`,
+- Livraison en palettes à l'étranger:
+• Transport Aérien → CPT
+• Transport Maritime → CFR
+• Post-acheminement géré par nos soins, livraison à l'étranger → DAP`,
 
 
 
   bdu: `🔐 BDU ET LICENCES EXPORT
 
-Utiliser le fichier Excel :
-"Correspondance BDU 2026"
+Pour savoir si une commande contient des Biens à Double Usage (BDU) et si une licence d'exportation est nécessaire, suivre cette procédure :
+OUTIL → Fichier Excel "Correspondance BDU 2026" fourni par Marie GRIMALDI.
 
-1️⃣ Saisir les références Netsuite
-2️⃣ Indiquer le pays
-3️⃣ Vérifier ECCN / ANSSI
+1️⃣ Dans la colonne D "code article", saisir les références articles Netsuite stockés de la commande
+2️⃣ Indiquer le pays de destination dans la cellule H
+3️⃣ Si des articles sont des BDU, les colonnes ECCN et ANSSI se complètent automatiquement. Si "Non trouvé" est indiqué, ce ne sont pas des BDU.
+4️⃣ Vérifier les cellules de résultat :
+   - Cellule H5 = "OUI" → export possible sous licence EU008
+   - Cellule H6 = "OUI" → licence individuelle obligatoire
+   - Cellule H6 = "NON" → pas de licence individuelle nécessaire
 
-📩 Contacter Marie GRIMALDI
-⏳ Délais licence : 4 à 6 semaines`,
+LICENCE INDIVIDUELLE :
+📩 Faire la demande par email à Marie GRIMALDI
+Un document sera remis à faire compléter, signer et tamponner par le client
+⏳ Délais d'obtention : 4 à 6 semaines,
 
 
 
   tracking: `🔍 TRACKING INTROUVABLE ?
 
-Le tracking se trouve dans la LC liée à la livraison dans NETSUITE.
+Le tracking de chaque commande se trouve dans la "LC" correspondante au numéro de livraison dans NETSUITE.
+Un lien https est disponible dans le champ 👉 TRACKING COLIS
 
-Champ :
-👉 TRACKING COLIS
+Si aucun lien https n'est présent, deux cas possibles :
 
-Si aucun lien :
-• vérifier les mails export
-• vérifier les LC de groupage`,
-
+1) COMMANDE EXPORT : le tracking a été envoyé par mail avec les documents export au responsable du compte ainsi qu'à la personne ayant saisi la commande.
+2) GROUPAGE CLIENT : le champ TRANSPORTEUR indique :
+   - "RH-CH" = regroupement de colis expédiés par Chronopost
+   - "Classic" = regroupement en palette Heppner
+   -> Pour retrouver le tracking, aller dans le compte client et ouvrir les LC expédiées à la même date. L'une d'elles contient le tracking correspondant.,
 
 
   groupage: `📅 GROUPAGES CLIENT HEBDOMADAIRES
 
-• ACRT VILLEFRANCHE → Lundis / Mercredis
-• TIMS → Lundis / Mercredis
-• SYBORD → Mardis / Vendredis
-• ACTION TELECOM → Vendredis`
+Voici les jours de départ en groupage hebdomadaire par client :
+
+- ACRT VILLEFRANCHE : Lundis et Mercredis
+- ACRT BOURG : Lundis
+- TIMS : Lundis et Mercredis
+- SYBORD et MULTIPHONE : Mardis et Vendredis
+- ABC TELEPHONIE : Mercredis et Vendredis
+- ATELSYS : Mercredis et Vendredis
+- ACTION TELECOM, ACTION TELECOM ATLANTIQUE et ACTION TELECOM OCCITANIE : Vendredis
+- MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis`
 };
 
 
