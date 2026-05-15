@@ -66,6 +66,25 @@ Règle pour choisir le bon Incoterm dans une commande de vente :
   * CFR si transport maritime
   * DAP si nous nous chargeons du post-acheminement
 
+--- BDU ET LICENCES EXPORT ---
+Pour savoir si une commande contient des Biens à Double Usage (BDU) et si une licence d'exportation est nécessaire, suivre cette procédure :
+
+OUTIL : Fichier Excel "Correspondance BDU 2026" fourni par Marie GRIMALDI.
+
+ÉTAPES :
+1. Dans la colonne D "code article", saisir les références articles Netsuite stockés de la commande
+2. Indiquer le pays de destination dans la cellule H
+3. Si des articles sont des BDU, les colonnes ECCN et ANSSI se complètent automatiquement. Si "Non trouvé" est indiqué, ce ne sont pas des BDU.
+4. Vérifier les cellules de résultat :
+   - Cellule H5 = "OUI" → export possible sous licence EU008
+   - Cellule H6 = "OUI" → licence individuelle obligatoire
+   - Cellule H6 = "NON" → pas de licence individuelle nécessaire
+
+LICENCE INDIVIDUELLE :
+- Faire la demande par email à Marie GRIMALDI
+- Un document sera remis à faire compléter, signer et tamponner par le client
+- Délais d'obtention : 4 à 6 semaines
+
 --- DESTOCKAGE ET PROMOTIONS ---
 Des produits en déstockage sont disponibles dans les catégories UC, Cabling, Networking et Sécurité.
 Promotions en cours sur : https://www.eshop-alliance.com/nos-promotions.html
