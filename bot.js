@@ -93,9 +93,9 @@ Si aucun lien https n'est présent, deux cas possibles :
 - MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis`,
 
   cut: '🕓 Cut-off Expédition
-- PALETTES → 16h00
-- COUPES → 15h30
-- COLIS → 17h00 (16h00 les vendredis)',
+    - PALETTES → 16h00
+    - COUPES → 15h30
+    - COLIS → 17h00 (16h00 les vendredis)',
 };
 
 function afficherReponse(cle, boxId, event) {
