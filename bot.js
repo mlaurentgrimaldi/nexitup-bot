@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyDbABaqtTAU7iz5M3iDmVL-yBmH7i76egQ";
+const API_KEY = "AIzaSyCXTWhm5iD5OQkl4WObNmCMJ3vlJpYZ2Qc";
 
 const SYSTEM_PROMPT = `
 Tu es l'assistant virtuel d'Alliance-Com / AC NEXITUP, leader français en distribution télécoms et réseaux d'entreprise.
