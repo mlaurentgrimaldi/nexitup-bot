@@ -55,7 +55,9 @@ main {
   border-radius: 16px;
   border: 1px solid #c7def5;
 }
-
+.categorie {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 .categorie h2 {
   color: #1565C0;
   font-size: 22px;
