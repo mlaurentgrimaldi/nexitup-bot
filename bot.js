@@ -92,7 +92,7 @@ Si aucun lien https n'est présent, deux cas possibles :
 - ACTION TELECOM, ACTION TELECOM ATLANTIQUE et ACTION TELECOM OCCITANIE : Vendredis
 - MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis`,
 
-  cutt-off: '🕓 Cutt-off Expédition
+  cutt: '🕓 Cutt-off Expédition
 - PALETTES → 16h00
 - COUPES → 15h30
 - COLIS → 17h00 (16h00 les vendredis)',
