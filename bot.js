@@ -56,6 +56,16 @@ HEPPNER :
   * 24H : départements 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 18, 21, 23, 24, 25, 26, 30, 31, 33, 34, 36, 37, 38, 39, 41, 42, 43, 45, 46, 48, 51, 52, 54, 55, 57, 58, 59, 60, 62, 63, 67, 68, 69, 70, 71, 73, 74, 75, 76, 77, 78, 80, 84, 86, 88, 89, 90, 91, 92, 93, 94, 95
   * 48H : départements 16, 17, 19, 22, 27, 28, 29, 32, 35, 40, 44, 47, 49, 50, 53, 56, 61, 64, 65, 72, 79, 81, 82, 85, 87
 
+--- INCOTERMS ---
+Règle pour choisir le bon Incoterm dans une commande de vente :
+- Enlèvement client dans nos locaux (au comptoir ou au dépôt) : EXW
+- Livraison à une adresse en France : DDP
+- Envoi en colis Chronopost à l'étranger : DAP
+- Envoi en palettes à l'étranger :
+  * CPT si transport aérien
+  * CFR si transport maritime
+  * DAP si nous nous chargeons du post-acheminement
+
 --- DESTOCKAGE ET PROMOTIONS ---
 Des produits en déstockage sont disponibles dans les catégories UC, Cabling, Networking et Sécurité.
 Promotions en cours sur : https://www.eshop-alliance.com/nos-promotions.html
