@@ -92,10 +92,11 @@ Si aucun lien https n'est présent, deux cas possibles :
 - ACTION TELECOM, ACTION TELECOM ATLANTIQUE et ACTION TELECOM OCCITANIE : Vendredis
 - MACON COMMUNICATION et MY TELECOM ENTREPRISE : Mardis`,
 
-  cut: '🕓 Cut-off Expédition
-    - PALETTES → 16h00
-    - COUPES → 15h30
-    - COLIS → 17h00 (16h00 les vendredis)',
+  cut: `🕓 CUT-OFF EXPÉDITION
+
+- PALETTES → 16h00
+- COUPES → 15h30
+- COLIS → 17h00 (16h00 vendredi)`
 };
 
 function afficherReponse(cle, boxId, event) {
