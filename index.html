@@ -8,14 +8,19 @@
 </head>
 <body>
 
-  <header>
-    <img src="logo ac nexitup.png" alt="AC NEXITUP" />
-    <h1>Assistant AC NEXITUP</h1>
-    <p>Posez vos questions sur nos produits, délais et distribution.</p>
-  </header>
+ <header>
+  <img src="https://www.telis.mc/wp-content/uploads/2023/07/Alliance-com-NEXITUP-500X500.jpg" alt="AC NEXITUP" />
+  <h1>Assistant AC NEXITUP</h1>
+  <p>Posez vos questions sur nos produits, délais et distribution.</p>
+</header>
 
   <main>
-    <div id="chat-box"></div>
+    <div id="suggestions">
+  <button class="suggestion" onclick="suggestionClick('Contacter Chronopost')">📦 Contacter Chronopost</button>
+  <button class="suggestion" onclick="suggestionClick('Contacter Heppner')">🚚 Contacter Heppner</button>
+  <button class="suggestion" onclick="suggestionClick('Délais de livraison Heppner')">🗺️ Délais Heppner</button>
+</div>
+<div id="chat-box"></div>
 
     <div id="input-area">
       <input type="text" id="user-input" placeholder="Votre question..." />
