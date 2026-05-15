@@ -21,10 +21,9 @@ header {
 }
 
 header img {
-  width: 400px;
-  height: 400px;
-  object-fit: contain;
-  margin-bottom: 1px;
+  width: 300px;
+  height: auto;
+  margin-bottom: 4px;
 }
 
 header h1 {
