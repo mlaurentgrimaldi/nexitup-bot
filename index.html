@@ -14,15 +14,61 @@
   </header>
 
   <main>
-    <div id="suggestions">
-      <button class="suggestion" onclick="afficherReponse('chronopost')">📦 Contacter Chronopost</button>
-      <button class="suggestion" onclick="afficherReponse('heppner')">🚚 Contacter Heppner</button>
-      <button class="suggestion" onclick="afficherReponse('delais')">🗺️ Délais Heppner</button>
-      <button class="suggestion" onclick="afficherReponse('incoterm')">📋 Quel Incoterm saisir ?</button>
-      <button class="suggestion" onclick="afficherReponse('bdu')">🔐 BDU et licences export</button>
-      <button class="suggestion" onclick="afficherReponse('tracking')">🔍 Tracking introuvable ?</button>
-      <button class="suggestion" onclick="afficherReponse('groupage')">📅 Groupages client Hebdo</button>
+<div id="suggestions">
+
+  <div class="categorie">
+    <h2>📦 Transporteurs</h2>
+
+    <div class="buttons-grid">
+      <button class="suggestion" onclick="afficherReponse('chronopost')">
+        📦 Contacter Chronopost
+      </button>
+
+      <button class="suggestion" onclick="afficherReponse('heppner')">
+        🚚 Contacter Heppner
+      </button>
+
+      <button class="suggestion" onclick="afficherReponse('delais')">
+        🗺️ Délais Heppner
+      </button>
     </div>
+  </div>
+
+  <div class="categorie">
+    <h2>📄 Export & Douanes</h2>
+
+    <div class="buttons-grid">
+      <button class="suggestion" onclick="afficherReponse('incoterm')">
+        📋 Quel Incoterm saisir ?
+      </button>
+
+      <button class="suggestion" onclick="afficherReponse('bdu')">
+        🔐 BDU et licences export
+      </button>
+    </div>
+  </div>
+
+  <div class="categorie">
+    <h2>🔍 SAV & Suivi</h2>
+
+    <div class="buttons-grid">
+      <button class="suggestion" onclick="afficherReponse('tracking')">
+        🔍 Tracking introuvable ?
+      </button>
+    </div>
+  </div>
+
+  <div class="categorie">
+    <h2>⚙️ Outils internes</h2>
+
+    <div class="buttons-grid">
+      <button class="suggestion" onclick="afficherReponse('groupage')">
+        📅 Groupages client Hebdo
+      </button>
+    </div>
+  </div>
+
+</div>
 <div id="reponse-box"></div>
   </main>
 
