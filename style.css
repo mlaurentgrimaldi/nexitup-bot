@@ -18,10 +18,10 @@ header {
 }
 
 header img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
 }
 
 header h1 {
@@ -98,3 +98,25 @@ button {
 }
 
 button:hover { background: #1565C0; }
+
+#suggestions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button.suggestion {
+  background: white;
+  color: #1565C0;
+  border: 2px solid #2196F3;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button.suggestion:hover {
+  background: #2196F3;
+  color: white;
+}
