@@ -6,6 +6,7 @@
   <title>AC NEXITUP — Assistant</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
@@ -14,64 +15,104 @@
   </header>
 
   <main>
-<div id="suggestions">
 
-  <div class="categorie">
-    <h2>📦 Transporteurs</h2>
+    <div id="suggestions">
 
-    <div class="buttons-grid">
-      <button class="suggestion" onclick="afficherReponse('chronopost')">
-        📦 Contacter Chronopost
-      </button>
+      <!-- TRANSPORTEURS -->
+      <div class="categorie">
 
-      <button class="suggestion" onclick="afficherReponse('heppner')">
-        🚚 Contacter Heppner
-      </button>
+        <h2>📦 Transporteurs</h2>
 
-      <button class="suggestion" onclick="afficherReponse('delais')">
-        🗺️ Délais Heppner
-      </button>
+        <div class="buttons-grid">
+
+          <button class="suggestion"
+            onclick="afficherReponse('chronopost', 'transporteurs-reponse')">
+            📦 Contacter Chronopost
+          </button>
+
+          <button class="suggestion"
+            onclick="afficherReponse('heppner', 'transporteurs-reponse')">
+            🚚 Contacter Heppner
+          </button>
+
+          <button class="suggestion"
+            onclick="afficherReponse('delais', 'transporteurs-reponse')">
+            🗺️ Délais Heppner
+          </button>
+
+        </div>
+
+        <div class="reponse-box" id="transporteurs-reponse"></div>
+
+      </div>
+
+
+      <!-- EXPORT -->
+      <div class="categorie">
+
+        <h2>📄 Export & Douanes</h2>
+
+        <div class="buttons-grid">
+
+          <button class="suggestion"
+            onclick="afficherReponse('incoterm', 'export-reponse')">
+            📋 Quel Incoterm saisir ?
+          </button>
+
+          <button class="suggestion"
+            onclick="afficherReponse('bdu', 'export-reponse')">
+            🔐 BDU et licences export
+          </button>
+
+        </div>
+
+        <div class="reponse-box" id="export-reponse"></div>
+
+      </div>
+
+
+      <!-- SAV -->
+      <div class="categorie">
+
+        <h2>🔍 SAV & Suivi</h2>
+
+        <div class="buttons-grid">
+
+          <button class="suggestion"
+            onclick="afficherReponse('tracking', 'sav-reponse')">
+            🔍 Tracking introuvable ?
+          </button>
+
+        </div>
+
+        <div class="reponse-box" id="sav-reponse"></div>
+
+      </div>
+
+
+      <!-- OUTILS -->
+      <div class="categorie">
+
+        <h2>⚙️ Outils internes</h2>
+
+        <div class="buttons-grid">
+
+          <button class="suggestion"
+            onclick="afficherReponse('groupage', 'outils-reponse')">
+            📅 Groupages client Hebdo
+          </button>
+
+        </div>
+
+        <div class="reponse-box" id="outils-reponse"></div>
+
+      </div>
+
     </div>
-  </div>
 
-  <div class="categorie">
-    <h2>📄 Export & Douanes</h2>
-
-    <div class="buttons-grid">
-      <button class="suggestion" onclick="afficherReponse('incoterm')">
-        📋 Quel Incoterm saisir ?
-      </button>
-
-      <button class="suggestion" onclick="afficherReponse('bdu')">
-        🔐 BDU et licences export
-      </button>
-    </div>
-  </div>
-
-  <div class="categorie">
-    <h2>🔍 SAV & Suivi</h2>
-
-    <div class="buttons-grid">
-      <button class="suggestion" onclick="afficherReponse('tracking')">
-        🔍 Tracking introuvable ?
-      </button>
-    </div>
-  </div>
-
-  <div class="categorie">
-    <h2>⚙️ Outils internes</h2>
-
-    <div class="buttons-grid">
-      <button class="suggestion" onclick="afficherReponse('groupage')">
-        📅 Groupages client Hebdo
-      </button>
-    </div>
-  </div>
-
-</div>
-<div id="reponse-box"></div>
   </main>
 
   <script src="bot.js"></script>
+
 </body>
 </html>
